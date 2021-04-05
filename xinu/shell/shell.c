@@ -4,6 +4,8 @@
 #include <stdio.h>
 #include "shprototypes.h"
 
+did32	dev1;
+
 /************************************************************************/
 /* Table of Xinu shell commands and the function associated with each	*/
 /************************************************************************/
@@ -28,7 +30,9 @@ const	struct	cmdent	cmdtab[] = {
 	{"udpecho",	FALSE,	xsh_udpecho},
 	{"udpeserver",	FALSE,	xsh_udpeserver},
 	{"uptime",	FALSE,	xsh_uptime},
-	{"?",		FALSE,	xsh_help}
+	{"?",		FALSE,	xsh_help},
+	{"calculator",  FALSE,  xsh_calculator },
+	{"timer",       FALSE,  xsh_timer },
 
 };
 
@@ -96,6 +100,8 @@ process	shell (
 	fprintf(dev, "%s\n\n", SHELL_STRTMSG);
 
 	/* Continually prompt the user, read input, and execute command	*/
+	
+	dev1 = dev;
 
 	while (TRUE) {
 
@@ -106,6 +112,11 @@ process	shell (
 		/* Read a command */
 
 		len = read(dev, buf, sizeof(buf));
+		int jj = 0;
+		while( jj <  sizeof(buf) ){
+			kprintf("%c",buf[jj] );
+			jj++;
+		}
 
 		/* Exit gracefully on end-of-file */
 

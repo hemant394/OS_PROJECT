@@ -14,6 +14,7 @@ void	resched(void)		/* Assumes interrupts are disabled	*/
 	struct procent *ptnew;	/* Ptr to table entry for new process	*/
 
 	/* If rescheduling is deferred, record attempt and return */
+	//kprintf("CURRENT PID              :::::::::       %d    \n" , currpid);
 
 	if (Defer.ndefers > 0) {
 		Defer.attempt = TRUE;

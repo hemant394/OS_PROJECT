@@ -72,3 +72,10 @@ extern	shellcmd  xsh_uptime	(int32, char *[]);
 
 /* in file xsh_help.c */
 extern	shellcmd  xsh_help	(int32, char *[]);
+
+/* in file xsh_calculator.c */
+extern	shellcmd  xsh_calculator (int32, char *[]);
+
+/* in file xsh_timer.c */
+extern	shellcmd  xsh_timer (int32, char *[]);
+
