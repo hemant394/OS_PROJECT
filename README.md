@@ -7,7 +7,7 @@ be available are Reminder , Calculator , Creating/editing files , Todo List . So
 specific keyword like ‘#’ users can minimize any process at any point of time. And
 Users can have a look at different minimized processes by using same keyword ‘#’ in
 the main process and will be able to open them again seamlessly.
-Team Members Contribution :
+Team Members:
 Hemant Kumar (CS18B014) 
 Rohit Shakya (CS18B029) 
 Sourabh Misal (CS18B022)
