@@ -10,7 +10,7 @@ Users can have a look at different minimized processes by using same keyword ‘
 the main process and will be able to open them again seamlessly.
 
 ## Team Members:
-- Hemant Kumar (CS18B014) 
-- Rohit Shakya (CS18B029) 
-- Sourabh Misal (CS18B022)
-- K Pavan Kumar (CS18B015)
+- [Hemant Kumar](https://github.com/hemant394)
+- [Rohit Shakya](https://github.com/r-shakya)
+- [Sourabh Misal](https://github.com/Sourabh-Ranger)
+- [K Pavan Kumar]()
